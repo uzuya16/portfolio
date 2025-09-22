@@ -1,0 +1,6 @@
+* {padding: 0; margin: 0; box-sizing: border-box}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+img, video {vertical-align: top;}
+html {font-size: 10px; letter-spacing: -0.08em;}
+
