@@ -12,25 +12,144 @@
         href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/static/complete/WantedSans.min.css" />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/static/complete/WantedSans.min.css" />
+
+    <!-- Google Fonts: Tangerine -->
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrap">
-        <section class="section1">
-            <div class="centerbox">
+    <span class="circle"></span>
 
+
+
+
+    <!-- 로딩 오버레이 -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div style="text-align: center;">
+            <div class="spinner"></div>
+            <div class="loading-text">로딩 중...</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div style="color: rgba(255,255,255,0.8); font-size: 14px; margin-top: 10px;">
+                <span id="progressText">0%</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="wrap">
+
+        <!-- SECTION 001 -->
+        <section class="section1">
+            <video src="video/main.mp4" autoplay muted playsinline loop class="videoMain"></video>
+            <div class="main">
+                <div class="main_content">
+                    <div class="main_title">
+                        <span>JUNG</span>
+                        <span>HEA JIN</span>
+                    </div>
+                    <div class="main_tt">
+                        <p class="tt">
+                            <span>Designs tell stories,</span>
+                            <span>and experiences become memories..</span>
+                        </p>
+                        <span class="mainLast">디자인은 이야기가 되고, 경험은 기억이 됩니다.</span>
+                    </div>
+                </div>
+                <div class="spiral">
+                    <img src="images/Spiral arrow.png" alt="표시">
+                </div>
+            </div>
+            <div class="text_portfolio">
+                <svg width="4109" height="999" viewBox="0 0 4109 999" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="top_box">
+                    <path
+                        d="M4109 999H0V0H4109V999ZM849.688 267.7C803.855 267.7 762.422 277.967 725.389 298.5C688.722 318.667 659.939 346.717 639.039 382.65C618.139 418.217 607.689 458.366 607.688 503.1C607.688 547.833 618.139 588.166 639.039 624.1C659.939 659.666 688.722 687.534 725.389 707.7C762.422 728.233 803.855 738.5 849.688 738.5C895.522 738.5 936.772 728.233 973.438 707.7C1010.47 687.534 1039.44 659.666 1060.34 624.1C1081.24 588.166 1091.69 547.833 1091.69 503.1C1091.69 458.367 1081.24 418.217 1060.34 382.65C1039.44 346.717 1010.47 318.667 973.438 298.5C936.772 277.967 895.522 267.7 849.688 267.7ZM2597.44 267.7C2551.61 267.7 2510.18 277.967 2473.14 298.5C2436.48 318.667 2407.69 346.717 2386.79 382.65C2365.89 418.217 2355.44 458.366 2355.44 503.1C2355.44 547.833 2365.89 588.166 2386.79 624.1C2407.69 659.666 2436.48 687.534 2473.14 707.7C2510.18 728.233 2551.61 738.5 2597.44 738.5C2643.28 738.5 2684.53 728.233 2721.19 707.7C2758.23 687.534 2787.19 659.666 2808.09 624.1C2828.99 588.166 2839.44 547.833 2839.44 503.1C2839.44 458.367 2828.99 418.217 2808.09 382.65C2787.19 346.717 2758.23 318.667 2721.19 298.5C2684.53 277.967 2643.28 267.7 2597.44 267.7ZM3674.88 267.7C3629.05 267.7 3587.62 277.967 3550.58 298.5C3513.92 318.667 3485.13 346.717 3464.23 382.65C3443.33 418.217 3432.88 458.366 3432.88 503.1C3432.88 547.833 3443.33 588.166 3464.23 624.1C3485.13 659.666 3513.92 687.534 3550.58 707.7C3587.62 728.233 3629.05 738.5 3674.88 738.5C3720.72 738.5 3761.97 728.233 3798.63 707.7C3835.67 687.534 3864.63 659.666 3885.53 624.1C3906.43 588.166 3916.88 547.833 3916.88 503.1C3916.88 458.367 3906.43 418.217 3885.53 382.65C3864.63 346.717 3835.67 318.667 3798.63 298.5C3761.97 277.967 3720.72 267.7 3674.88 267.7ZM216.6 279.25V727.5H316.7V608.15H388.75C427.25 608.15 460.25 601.366 487.75 587.8C515.617 574.233 536.883 555.166 551.55 530.6C566.216 505.666 573.55 476.517 573.55 443.15C573.55 410.15 566.216 381.366 551.55 356.8C536.883 332.233 515.617 313.166 487.75 299.6C460.25 286.033 427.25 279.25 388.75 279.25H216.6ZM1151.17 279.25V727.5H1251.27V586.15H1331.02L1417.92 727.5H1533.97L1430.02 566.35C1456.42 553.883 1476.59 536.283 1490.52 513.55C1504.82 490.45 1511.97 463.5 1511.97 432.7C1511.97 401.9 1504.82 374.95 1490.52 351.85C1476.22 328.75 1455.5 310.967 1428.37 298.5C1401.24 285.667 1368.97 279.25 1331.57 279.25H1151.17ZM1545.89 279.25V367.8H1691.64V727.5H1791.74V367.8H1937.49V279.25H1545.89ZM1991.21 279.25V727.5H2091.31V555.9H2294.81V469H2091.31V367.25H2320.11V279.25H1991.21ZM2898.92 279.25V727.5H3222.87V638.95H2999.02V279.25H2898.92ZM3273.29 279.25V727.5H3373.39V279.25H3273.29ZM849.688 357.9C876.455 357.9 900.656 364.133 922.289 376.6C943.922 389.066 960.789 406.3 972.889 428.3C985.355 450.3 991.589 475.233 991.589 503.1C991.589 530.6 985.355 555.534 972.889 577.9C960.789 599.9 943.922 617.133 922.289 629.6C900.656 642.066 876.455 648.3 849.688 648.3C822.922 648.3 798.722 642.066 777.089 629.6C755.456 617.133 738.405 599.9 725.938 577.9C713.838 555.534 707.789 530.6 707.789 503.1C707.789 475.233 713.839 450.3 725.938 428.3C738.405 406.3 755.456 389.066 777.089 376.6C798.722 364.133 822.922 357.9 849.688 357.9ZM2597.44 357.9C2624.21 357.9 2648.41 364.133 2670.04 376.6C2691.68 389.066 2708.54 406.3 2720.64 428.3C2733.11 450.3 2739.34 475.233 2739.34 503.1C2739.34 530.6 2733.11 555.534 2720.64 577.9C2708.54 599.9 2691.68 617.133 2670.04 629.6C2648.41 642.066 2624.21 648.3 2597.44 648.3C2570.68 648.3 2546.48 642.066 2524.84 629.6C2503.21 617.133 2486.16 599.9 2473.69 577.9C2461.59 555.534 2455.54 530.6 2455.54 503.1C2455.54 475.233 2461.59 450.3 2473.69 428.3C2486.16 406.3 2503.21 389.066 2524.84 376.6C2546.48 364.133 2570.68 357.9 2597.44 357.9ZM3674.88 357.9C3701.65 357.9 3725.85 364.133 3747.48 376.6C3769.12 389.066 3785.98 406.3 3798.08 428.3C3810.55 450.3 3816.78 475.233 3816.78 503.1C3816.78 530.6 3810.55 555.534 3798.08 577.9C3785.98 599.9 3769.12 617.133 3747.48 629.6C3725.85 642.066 3701.65 648.3 3674.88 648.3C3648.12 648.3 3623.92 642.066 3602.28 629.6C3580.65 617.133 3563.6 599.9 3551.13 577.9C3539.03 555.534 3532.98 530.6 3532.98 503.1C3532.98 475.233 3539.03 450.3 3551.13 428.3C3563.6 406.3 3580.65 389.066 3602.28 376.6C3623.92 364.133 3648.12 357.9 3674.88 357.9ZM384.35 367.8C412.583 367.8 434.4 374.217 449.8 387.05C465.566 399.883 473.45 418.584 473.45 443.15C473.45 467.717 465.566 486.6 449.8 499.8C434.4 513 412.583 519.6 384.35 519.6H316.7V367.8H384.35ZM1327.17 367.8C1353.94 367.8 1374.65 373.483 1389.32 384.85C1404.35 395.85 1411.87 411.8 1411.87 432.7C1411.87 453.6 1404.35 469.733 1389.32 481.1C1374.65 492.1 1353.94 497.6 1327.17 497.6H1251.27V367.8H1327.17Z"
+                        fill="#FFFDF5" />
+                </svg>
+                <img src="images/top_red.svg" alt="" class="top_red">
+            </div>
+            <div class="sign">
+                <span class="title">
+                    WEBDESIGN & <br>PUBLISHING
+                </span>
+                <div class="name name1">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.2946 3.19665C26.0418 1.21067 49.3587 2.00499 24.6485 21.0701C-6.23925 44.9014 -3.82993 23.7276 21.9912 24.0626C33.0966 23.7871 41.039 34.3097 37.6524 39.2657"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="name name2">
+                    <svg width="34" height="55" viewBox="0 0 34 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.00483 32.2667C9.7255 28.9528 27.9148 20.5152 30.9068 13.2754C34.6468 4.22574 20.4764 -5.87593 22.2897 10.331C24.1031 26.5379 16.8432 46.6047 10.4945 53.4723"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="name name3">
+                    <svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.7523 1.55585C0.113022 7.61492 -4.18148 21.4553 11.0111 24.818C26.2036 28.1807 39.8781 4.17469 14.7523 1.55585Z"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="name name4">
+                    <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.632812 1.92578C5.02143 2.44157 26.4915 7.88721 30.732 2.8674C21.6712 11.255 8.24268 17.8194 2.66102 20.0531C12.0887 17.9563 32.7854 11.4426 40.1508 2.16209C0.619342 46.6314 27.8473 39.5591 30.7089 33.8974C36.2507 29.778 52.8235 3.71326 32.4057 17.8257"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="name name5">
+                    <svg width="32" height="90" viewBox="0 0 32 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.319 16.1857C9.69008 27.4033 7.34076 51.1548 2.97456 56.42C-2.48318 63.0014 11.369 35.0767 22.539 24.8389C31.475 16.6486 31.104 5.73151 29.8015 1.29674C29.0083 28.0834 22.1739 83.0053 1.18169 88.4"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="name name6">
+                    <svg width="39" height="35" viewBox="0 0 39 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.61439 4.71411C20.0381 0.66667 41.8492 -2.07246 21.7042 19.3505C-3.47706 46.1292 -4.39402 26.071 19.6784 22.531C29.9691 20.6181 38.9278 29.2229 36.5164 34.3388"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="name name7">
+                    <svg width="24" height="79" viewBox="0 0 24 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.3655 0.592401C23.6667 15.9481 24.6153 52.8898 2.00106 77.8111" stroke="white"
+                            stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="name name8">
+                    <svg width="57" height="15" viewBox="0 0 57 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.414 1.44277L3.81891 6.20306C14.5941 11.1416 39.9045 17.9958 54.944 5.90386"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+
+                <!-- <svg viewBox="0 0 893 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.05786 58.644C46.0741 49.5423 91.0904 40.4407 128.179 31.5701C165.268 22.6995 193.065 14.3359 208.122 9.65831C223.18 4.98077 224.656 4.24279 225.047 3.73963C225.438 3.23647 224.7 2.99048 224.074 3.84772C222.282 6.30127 221.957 16.8181 220.72 32.0695C220.14 39.2186 218.991 45.107 217.5 51.4692C216.009 57.8315 214.041 64.4732 211.428 71.3386C208.815 78.2039 205.618 85.0917 201.51 91.7148C197.403 98.3379 192.483 104.488 187.243 109.87C182.003 115.252 176.591 119.679 171.097 123.559C160.477 131.059 148.958 135.9 137.802 139.251C127.39 142.378 118.127 142.132 110.937 141.394C103.92 140.673 98.977 135.691 95.1343 130.865C86.702 120.273 89.0181 113.321 89.7561 111.211C90.1352 110.128 91.97 109.84 109.95 108.233C127.929 106.627 162.368 103.921 205.446 96.5004C248.524 89.0797 299.198 77.0262 326.533 70.3248C353.868 63.6234 356.328 62.6394 357.718 62.7475C359.108 62.8556 359.354 64.0856 359.112 65.2112C358.058 70.109 355.642 74.775 355.504 83.5822C355.474 85.5073 356.611 86.2098 357.729 86.59C360.211 87.4339 364.058 86.7242 368.765 85.8595C374.116 84.8765 383.64 79.3072 395.675 71.8678C400.971 68.594 404.02 65.4124 405.668 64.5067C407.315 63.601 407.315 64.831 407.069 66.2026C406.55 69.098 405.824 73.7687 407.423 78.6139C409.012 83.4303 418.712 79.2774 427.986 74.3426C444.273 65.6752 453.024 54.9317 454.761 53.1875C455.325 52.6211 456.006 53.9031 456.26 55.7629C458.024 68.7119 451.548 80.9993 452.771 78.7966C454.423 75.8202 458.421 69.2141 463.77 62.1027C469.118 54.9914 475.76 47.6117 480.534 42.58C487.821 34.9004 493.017 31.3241 496.863 30.4445C510.818 27.2532 508.193 62.6022 509.058 65.3342C509.415 66.4634 510.661 66.5902 516.702 59.0912C522.744 51.5922 533.814 36.3408 540.008 27.9921C546.203 19.6433 547.187 18.6593 547.448 18.5214C547.708 18.3835 547.216 19.1215 549.423 26.6354C551.629 34.1493 556.549 48.4167 559.576 63.0233C562.602 77.63 563.586 92.1434 563.109 102.818C562.632 113.492 560.664 119.888 557.928 125.274C552.77 135.429 543.035 141.856 530.903 146.448C524.153 149.002 515.327 149.318 503.143 149.455C490.959 149.593 475.462 148.855 442.141 143.063C408.821 137.271 358.147 126.448 329.951 120.134C301.755 113.82 297.573 112.344 296.772 111.092C295.971 109.84 298.677 108.856 396.991 92.3596C495.305 75.8633 689.145 43.8845 789.495 27.4106C889.844 10.9367 890.828 10.9367 889.859 11.3057C888.89 11.6747 885.938 12.4127 883.925 12.9158C881.913 13.419 880.929 13.665 879.915 13.9184" stroke="#fff" stroke-width="6"/>
+                </svg>-->
             </div>
         </section>
 
+        
 
+
+        <!-- SECTION 002 -->
         <section class="section2">
             <div class="centerbox">
-                <div class="side-title">INDEX</div>
+                <div class="side-title">
+                    IN<span>D</span>EX</div>
                 <div class="menu-box">
                     <div class="menu-row rowf">
                         Designing Stories, Publishing Experiences
                     </div>
-                    <a href="#" class="menu-row">
+                    <a href="#" class="menu-row linkA">
                         <div class="left">
                             <p class="small">Introduce<br><span class="mini">자기소개</span></p>
                         </div>
@@ -38,12 +157,24 @@
                             <h2>About Me</h2>
                         </div>
                         <div class="right">
-                            <span class="plus"></span>
+                            <span class="plus plus1"></span>
                             <p>page 03</p>
                         </div>
                     </a>
+                    <figure class="point_1">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_2">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_3">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_4">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
 
-                    <a href="#" class="menu-row">
+                    <a href="#" class="menu-row linkA">
                         <div class="left">
                             <p class="small">Works<br><span class="mini">작업물 소개</span></p>
                         </div>
@@ -58,12 +189,12 @@
                             </ul>
                         </div>
                         <div class="right">
-                            <span class="plus"></span>
+                            <span class="plus plus2"></span>
                             <p>page 04~12</p>
                         </div>
                     </a>
 
-                    <a href="#" class="menu-row">
+                    <a href="#" class="menu-row linkA">
                         <div class="left">
                             <p class="small small_s">
                                 <span>Idea to Reality</span>
@@ -74,12 +205,12 @@
                             <h2>Behind the Work</h2>
                         </div>
                         <div class="right">
-                            <span class="plus"></span>
+                            <span class="plus plus3"></span>
                             <p>page 13</p>
                         </div>
                     </a>
 
-                    <a href="#" class="menu-row rowe">
+                    <a href="#" class="menu-row rowe linkA">
                         <div class="left">
                             <p class="small">Let’s Connect<br><span class="mini">마지막으로..</span></p>
                         </div>
@@ -87,7 +218,7 @@
                             <h2>Contact</h2>
                         </div>
                         <div class="right">
-                            <span class="plus"></span>
+                            <span class="plus plus4"></span>
                             <p>page 15</p>
                         </div>
                     </a>
@@ -95,7 +226,7 @@
             </div>
         </section>
 
-
+        <!-- SECTION 003 -->
         <section class="section3">
             <div class="sect3_bg">
                 <img src="images/redbook.png" alt="노트배경" class="note-bg">
@@ -108,10 +239,12 @@
                             <span>My story starts here.</span>
                         </div>
                         <div class="img_box">
-                            <img src="images/section3_img1.png" alt="좋아하는이미지">
-                            <img src="images/section3_img2.png" alt="좋아하는이미지">
-                            <img src="images/section3_img3.png" alt="좋아하는이미지">
-                            <img src="images/section3_img4.png" alt="좋아하는이미지">
+                            <ul>
+                                <li><video src="video/v1.mp4" playsinline muted loop reload="auto" class="linkA"></video></li>
+                                <li><video src="video/v2.mp4" playsinline muted loop reload="auto" class="linkA"></video></li>
+                                <li><video src="video/v3.mp4" playsinline muted loop reload="auto" class="linkA"></video></li>
+                                <li><video src="video/v4.mp4" playsinline muted loop reload="auto" class="linkA"></video></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="note_b">
@@ -141,9 +274,8 @@
                         <div class="grid-box">
                             <div class="profile">
                                 <figure><img src="images/redbook_bg.png" alt="배경"></figure>
-                                <div class="circle">
-
-                                </div>
+                                <div class="circle"></div>
+                                <div class="circle2"></div>
                             </div>
                             <div class="info">
                                 <h3 class="title">Info</h3>
@@ -159,7 +291,7 @@
                                     <li>
                                         <span>2025</span>
                                         <ul>
-                                            <li>웹디자인기능사</li>
+                                            <li>웹디자인개발기능사</li>
                                             <li>GTQ 1급</li>
                                         </ul>
                                     </li>
@@ -196,18 +328,623 @@
             </div>
         </section>
 
+
+        <!-- SECTION 004 -->
         <section class="section4">
-            
+            <div class="contentBox">
+                <ul class="content">
+                    <li class="img1"><img src="images/part4_mo1.png" alt=""></li>
+                    <li class="img2"><img src="images/part4_mo2.png" alt=""></li>
+                </ul>
+    
+                <div class="textwrap">
+                    <ul class="textbox textbox1">
+                        <li class="typo">
+                            <p>Typography</p>
+                            <p class="tt_last">
+                                제목과 중요한 정보는 굵은 글씨체로, 일반 내용은 보통 글씨체로 구분해 정보 전달의 명확성을 높였습니다.
+                            </p>
+                        </li>
+                        <li class="timeline">
+                            <p>Project Timeline</p>
+                            <p class="tt_last">10days</p>
+                        </li>
+                        <li class="color">
+                            <p>Color</p>
+                            <p class="tt_last"><span></span>#FFFFFF</p>
+                            <p class="tt_last"><span></span>#E6E6E6</p>
+                            <p class="tt_last"><span></span>#252525</p>
+                        </li>
+                        <li class="riview">
+                            <p>Overview</p>
+                            <p class="tt_last">
+                                "오늘 뭐 먹지?"라는 고민을 해결해주는 맛집 앱입니다. 
+                                사용자의 현재 위치를 기반으로 주변 맛집 순위를 보여주고, 다양한 식당을 검색하거나 솔직한 리뷰를 작성할 수 있는 기능을 제공하여 사용자들이 쉽고 빠르게 맛집 정보를 찾을 수 있도록 돕는 것이 주된 목표입니다.
+                            </p>
+                        </li>
+                        <li class="contri">
+                            <p>Contribution</p>
+                            <p class="tt_last">
+                                기획 및 아이디어 교환은 팀원과 함께 진행, 디자인은 100%
+                            </p>
+                        </li>
+                        <li class="font">
+                            <p>Font</p>
+                            <p class="tt_last">
+                                Happiness Sans, 
+                                Spoqa Han Sans Neo 
+                                – 기본 사용 폰트
+                                Gumi Industry – 로고 전용 폰트
+                                The Jamsil OTF – 포인트 폰트
+                            </p>
+                        </li>
+                        <li  class="target">
+                            <p>Target User</p>
+                            <p class="tt_last">
+                                메뉴 선택에 어려움을 느끼거나 새로운 맛집을 탐색하고 싶은 20~40대, 간편하게 식사 장소를 찾으려는 자취생 및 직장인, 그리고 숨겨진 맛집을 찾아다니는 미식가들을 주요 타겟으로 합니다.
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="textbox textbox2">
+                        <li class="typo">
+                            <p>Typography2</p>
+                            <p class="tt_last">브랜드 로고와 글꼴은 심플함과 세련됨을 강조하고, 사용자가 스타일의 주인공이 되도록 미니멀리즘을 지향합니다.</p>
+                        </li>
+                        <li class="timeline">
+                            <p>Project Timeline</p>
+                            <p class="tt_last">7days</p>
+                        </li>
+                        <li class="color">
+                            <p>Color</p>
+                            <p class="tt_last"><span></span>#FFFFFF</p>
+                            <p class="tt_last"><span></span>#E6E6E6</p>
+                            <p class="tt_last"><span></span>#252525</p>
+                        </li>
+                        <li class="riview">
+                            <p>Overview</p>
+                            <p class="tt_last">OOTD는 날씨와 컬러를 기반으로 패션을 추천하고, 
+                                쇼핑몰과 연계해 구매까지 이어지는 SNS형 패션 앱입니다. 
+                                단순 쇼핑을 넘어 스타일을 공유하고 소통하며, 
+                                일상 속 패션 경험을 확장하는 것을 목표로 합니다.</p>
+                        </li>
+                        <li class="contri">
+                            <p>Contribution</p>
+                            <p class="tt_last">전체 앱 콘셉트 기획 + 디자인 100% 개인프로젝트</p>
+                        </li>
+                        <li class="font">
+                            <p>Font</p>
+                            <p class="tt_last">
+                                Happiness Sans, 
+                                Spoqa Han Sans Neo 
+                                – 기본 사용 폰트
+                                Gumi Industry – 로고 전용 폰트
+                                The Jamsil OTF – 포인트 폰트
+                            </p>
+                        </li>
+                        <li  class="target">
+                            <p>Target User</p>
+                            <p class="tt_last">
+                                20~30대, 데일리룩 공유에 적극적이며, 날씨/무드 기반의 패션 영감을 얻고자 하는 사용자
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="svg_box">
+                <div class="part4_left" style="top:-500px">
+                    <svg width="1998" height="2000" viewBox="0 0 1998 2000" fill="#FFFDF5" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_447_1140)">
+                        <path d="M1874.52 1999.58C1824.81 1994.11 1794.85 1964.31 1778.14 1919.58C1766.49 1888.41 1766.71 1855.71 1770.12 1823.07C1775.21 1774.28 1795.08 1731.02 1820.7 1690.01C1839.66 1659.67 1850.02 1627.02 1848.16 1590.91C1846.74 1563.27 1839.31 1537.6 1823.12 1514.9C1799.81 1482.23 1758.4 1477.79 1726.59 1504.11C1709.36 1518.37 1698.83 1537.5 1687.83 1556.28C1678.05 1572.99 1667.53 1588.96 1652.22 1601.31C1615.7 1630.78 1557.98 1621.66 1534.89 1582.43C1526.3 1567.84 1525.17 1551.66 1526.29 1535.14C1528 1510.09 1538.97 1489.07 1554.14 1469.75C1574.5 1443.81 1598.62 1421.64 1622.79 1399.4C1640.99 1382.65 1659.14 1365.65 1675.49 1347.15C1691.44 1329.1 1702.46 1307.55 1705.31 1283.18C1708.88 1252.79 1704.2 1224.81 1676.75 1205.59C1664.49 1197.01 1650.41 1193.33 1635.81 1193.36C1584.66 1193.48 1533.49 1193.58 1482.37 1195.03C1453.31 1195.85 1425.21 1203.09 1398.71 1215.4C1358.84 1233.92 1333.87 1265.98 1317.48 1305.73C1310.76 1322.02 1305 1338.86 1296.74 1354.34C1276.6 1392.1 1231.5 1391.83 1205.02 1366.14C1185.82 1347.52 1177.14 1323.71 1174.76 1297.75C1168.33 1227.59 1198.77 1173.55 1250.14 1129.12C1282.86 1100.82 1321.73 1084.21 1362.23 1070.74C1395.49 1059.68 1429.3 1049.73 1459.74 1031.87C1515.83 998.97 1547.73 949.81 1556.16 885.29C1559.38 860.69 1559.4 836.29 1552.67 812.27C1540.75 769.76 1510.65 746.81 1469.25 737.59C1454.62 734.33 1439.27 733.73 1424.21 733.16C1389.96 731.87 1356.07 729.43 1323.97 715.7C1251.19 684.57 1211.85 604.26 1232.72 527.99C1241.86 494.61 1262.54 469.06 1289.38 447.99C1328.56 417.24 1373.64 399.8 1422.05 391.19C1452.44 385.79 1483.3 382.78 1514.03 379.54C1566.73 373.99 1618.68 365.68 1665.71 339.26C1699.54 320.25 1726.36 294.77 1737.08 255.88C1744.26 229.82 1745.19 203.03 1746.44 176.18C1747.44 154.75 1748.89 132.96 1753.78 112.18C1762.17 76.48 1785.67 50.75 1815.8 31.13C1847.74 10.38 1882.02 -0.1 1918 0.01L1 0V2000H1883C1880.2 2000.02 1877.37 1999.89 1874.52 1999.58Z"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_447_1140" x="-79" y="-110" width="2077" height="2160" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="-30"/>
+                        <feGaussianBlur stdDeviation="40"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_447_1140"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_447_1140" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>                     
+                </div>
+
+                <div class="part4_right">
+                    <svg width="1728" height="2000" viewBox="0 0 1728 2000" fill="#FFFDF5" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_447_1143)">
+                        <path d="M572 141.5C572 39.9 491 3.83333 450.5 -1.5H1728.5V2004H389.5C439.5 2004 450.5 1972.5 482.5 1824C514.5 1675.5 628 1702.5 720.5 1758C813 1813.5 993 1887.5 993 1729C993 1570.5 744 1628.5 572 1652.5C400 1676.5 450.5 1438 466.5 1292.5C482.5 1147 471.5 1059.5 482.5 998.5C493.5 937.5 612 821.5 419 887.5C226 953.5 172.5 795 209.5 726C246.5 657 217.5 570 157 570C96.5 570 80 541 80 504C80 467 109 387.5 276 374.5C443 361.5 572 268.5 572 141.5Z" />
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_447_1143" x="0" y="-111.5" width="1808.5" height="2165.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="-30"/>
+                        <feGaussianBlur stdDeviation="40"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_447_1143"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_447_1143" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>
+                </div>
+            </div>
+            <div class="cover"></div>
         </section>
 
+        <div class="section58_wrap">
 
+            <figure class="point_top">
+                <img src="images/bbang.png" alt="포인트이미지" class="point_star point_star1">
+                <!-- <img src="images/bbang.png" alt="포인트이미지" class="point_star point_star2">
+                <img src="images/bbang.png" alt="포인트이미지" class="point_star point_star3">
+                <img src="images/bbang.png" alt="포인트이미지" class="point_star point_star4"> -->
+            </figure>
+
+            <div class="sections-wrapper">
+                <!-- SECTION 005 -->
+                <section class="section58 section5">
+                    <!-- <figure class="point_bottom1">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_bottom2">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure> -->
+                    <!-- <div class="line line1"></div>
+                    <div class="line line2"></div> -->
+                    <div class="round"></div>
+                    <div class="swim"><img src="images/section5_swim.png" alt="포인트수영"></div>
+                    <div class="notebook">
+                        <span>Ocean leisure sports</span>
+                        <img src="images/mackbook.png" alt="노트북">
+                        <figure class="notebook_screen screen"><img src="images/page_ocean_leisure_sports.png" alt="노트북스크린">
+                        </figure>
+                    </div>
+                    <div class="textbox">
+                        <ul>
+                            <li>
+                                <img src="images/btn.png" alt="버튼">
+                            </li>
+                            <li>
+                                <span class="first">Duration1서핑</span>
+                                <span class="last">30 days</span>
+                            </li>
+                            <li>
+                                <span class="first">Contribution</span>
+                                <span class="last">Publishing / Design 100%</span>
+                            </li>
+                            <li>
+                                <span class="first">Target Users</span>
+                                <span class="last">초등학교 고학년 이상 해양 스포츠에 관심 있는 일반인</span>
+                            </li>
+                            <li>
+                                <p class="first colors">
+                                    Fonts & Colors
+                                    <span class="color_1"></span>
+                                    <span class="color_2"></span>
+                                    <span class="color_3"></span>
+                                </p>
+                                <span class="last">작은 화면이나 디지털 환경에서 가독성이 좋도록 Sans폰트 사용</span>
+                            </li>
+                            <li>
+                                <span class="first">Result</span>
+                                <span class="last">메인 페이지에서 대회 일정·참가 안내등을 직관적으로 확인 가능하게 제작함</span>
+                            </li>
+                            <li>
+                                <span class="first">Pages</span>
+                                <span class="last laa">main page ① + sub page ②</span>
+                            </li>
+                            <li>
+                                <span class="first">Tools</span>
+                                <span class="last">Figma, Photoshop, Ai, Visual Studio Code</span>
+                            </li>
+                            <li>
+                                <span class="first">Ai</span>
+                                <p class="last">
+                                    <span>이미지생성 : GPT, Whisk, gemini</span>
+                                    <span>이미지합성 : midjourney, Whisk</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+    
+                <!-- SECTION 006 -->
+                <section class="section58 section6">
+                    <!-- <figure class="point_top">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_bottom1">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_bottom2">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <div class="line line1"></div>
+                    <div class="line line2"></div> -->
+                    <div class="round"></div>
+                    <div class="bread"><img src="images/section6_bread.png" alt="포인트빵이미지"></div>
+                    <div class="notebook">
+                        <span>Crumb & Butter</span>
+                        <img src="images/mackbook.png" alt="노트북">
+                        <figure class="notebook_screen screen"><img src="images/page_crumbbutter.png" alt="노트북스크린"></figure>
+                    </div>
+                    <div class="textbox">
+                        <ul>
+                            <li>
+                                <img src="images/btn.png" alt="버튼">
+                            </li>
+                            <li>
+                                <span class="first">Duration2빵</span>
+                                <span class="last">30 days</span>
+                            </li>
+                            <li>
+                                <span class="first">Contribution</span>
+                                <span class="last">Publishing / Design 100%</span>
+                            </li>
+                            <li>
+                                <span class="first">Target Users</span>
+                                <span class="last">SNS를 통해 새로운 디저트 문화를 공유하는 20~30대 트렌디 소비자</span>
+                            </li>
+                            <li>
+                                <p class="first colors">
+                                    Fonts & Colors
+                                    <span class="color_1"></span>
+                                    <span class="color_2"></span>
+                                    <span class="color_3"></span>
+                                </p>
+                                <span class="last">작은 화면이나 디지털 환경에서 가독성이 좋도록 Sans폰트 사용</span>
+                            </li>
+                            <li>
+                                <span class="first">Result</span>
+                                <span class="last">브랜드 콘셉트와 통일성 있는 웹사이트·프로토타입을 제작하여 실제 서비스에<br>적용 가능한 결과물을 완성했습니다</span>
+                            </li>
+                            <li>
+                                <span class="first">Pages</span>
+                                <span class="last laa">full page</span>
+                            </li>
+                            <li>
+                                <span class="first">Tools</span>
+                                <span class="last">Figma, Photoshop, Ai, Visual Studio Code</span>
+                            </li>
+                            <li>
+                                <span class="first">Ai</span>
+                                <p class="last">
+                                    <span>이미지생성 : GPT, Whisk, gemini</span>
+                                    <span>이미지합성 : midjourney, Whisk</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        
+        
+                <!-- SECTION 007 -->
+                <section class="section58 section7">
+                    <!-- <figure class="point_top">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_bottom1">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_bottom2">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <div class="line line1"></div>
+                    <div class="line line2"></div> -->
+                    <div class="round"></div>
+                    <div class="angel"><img src="images/section7_angel.png" alt="포인트석상이미지"></div>
+                    <div class="notebook">
+                        <span>MUSEUM OF ART</span>
+                        <img src="images/mackbook.png" alt="노트북">
+                        <figure class="notebook_screen screen"><img src="images/page_museum_of_art.png" alt="노트북스크린"></figure>
+                    </div>
+                    <div class="textbox">
+                        <ul>
+                            <li>
+                                <img src="images/btn.png" alt="버튼">
+                            </li>
+                            <li>
+                                <span class="first">Duration3물감</span>
+                                <span class="last">10 days</span>
+                            </li>
+                            <li>
+                                <span class="first">Contribution</span>
+                                <span class="last">Publishing / Design 100%</span>
+                            </li>
+                            <li>
+                                <span class="first">Target Users</span>
+                                <span class="last">미술에 관심 있는 누구나, 학생부터 애호가까지 폭넓게 접근 가능하도록 설정</span>
+                            </li>
+                            <li>
+                                <p class="first colors">
+                                    Fonts & Colors
+                                    <span class="color_1"></span>
+                                    <span class="color_2"></span>
+                                    <span class="color_3"></span>
+                                </p>
+                                <span class="last">Pretendard 폰트를 활용해 깔끔하고 현대적인 감각을 살린 미술 감상 플랫폼 완성</span>
+                            </li>
+                            <li>
+                                <span class="first">Result</span>
+                                <span class="last">미술 작품과 전시 정보를 한눈에 볼 수 있는 웹사이트 완성</span>
+                            </li>
+                            <li>
+                                <span class="first">Pages</span>
+                                <span class="last laa">main page</span>
+                            </li>
+                            <li>
+                                <span class="first">Tools</span>
+                                <span class="last">Figma, Photoshop, Ai, Visual Studio Code</span>
+                            </li>
+                            <li>
+                                <span class="first">Ai</span>
+                                <p class="last">
+                                    <span>이미지생성 : GPT</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        
+                <!-- SECTION 008 -->
+                <section class="section58 section8">
+                    <!-- <figure class="point_top">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_bottom1">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <figure class="point_bottom2">
+                        <img src="images/bbang.png" alt="포인트이미지">
+                    </figure>
+                    <div class="line line1"></div>
+                    <div class="line line2"></div> -->
+                    <div class="round"></div>
+                    <div class="alphbet">
+                        <img src="images/alphbet.png" alt="알파벳이미지">
+                    </div>
+                    <div class="tab">
+                        <span>SPEAK</span>
+                        <img src="images/ipad.png" alt="태블릿">
+                        <figure class="tab_screen screen notebook_screen"><img src="images/page_speak.png" alt="태블릿스크린"></figure>
+                    </div>
+                    <div class="textbox">
+                        <ul>
+                            <li>
+                                <img src="images/btn.png" alt="버튼">
+                            </li>
+                            <li>
+                                <span class="first">Duration4</span>
+                                <span class="last">15 days</span>
+                            </li>
+                            <li>
+                                <span class="first">Contribution</span>
+                                <span class="last">Publishing / Design 100%</span>
+                            </li>
+                            <li>
+                                <span class="first">Target Users</span>
+                                <span class="last">미술에 관심 있는 누구나, 학생부터 애호가까지 폭넓게 접근 가능하도록 설정</span>
+                            </li>
+                            <li>
+                                <p class="first colors">
+                                    Fonts & Colors
+                                    <span class="color_1"></span>
+                                    <span class="color_2"></span>
+                                    <span class="color_3"></span>
+                                </p>
+                                <span class="last">Pretendard 폰트를 활용해 깔끔하고 현대적인 감각을 살린 미술 감상 플랫폼 완성</span>
+                            </li>
+                            <li>
+                                <span class="first">Result</span>
+                                <span class="last">미술 작품과 전시 정보를 한눈에 볼 수 있는 웹사이트 완성</span>
+                            </li>
+                            <li>
+                                <span class="first">Pages</span>
+                                <span class="last laa">full page</span>
+                            </li>
+                            <li>
+                                <span class="first">Tools</span>
+                                <span class="last">Figma, Photoshop, Ai, Visual Studio Code</span>
+                            </li>
+                            <li>
+                                <span class="first">Ai</span>
+                                <p class="last">
+                                    <span>이미지생성 : GPT, Whisk, gemini</span>
+                                    <span>이미지합성 : midjourney, Whisk</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- SECTION 009 -->
+        <section class="section9">
+            <div class="iphone">
+                <img src="images/iphone.png" alt="휴대폰목업">
+                <div class="page_view"><img src="images/page1.png" alt="상세페이지"></div>
+                <div class="page"><img src="images/page1.png" alt="상세페이지"></div>
+            </div>
+            
+            <div class="textbox">
+                <ul>
+                    <li>
+                        <img src="images/btn.png" alt="버튼">
+                    </li>
+                    <li>
+                        <span class="first">Client & Position</span>
+                        <span>gemora  제모라 홈페이지 상세페이지 제작</span>
+                    </li>
+                    <li>
+                        <span class="first">Persentege</span>
+                        <span>Company’s project (Personal 100%)</span>
+                    </li>
+                    <li>
+                        <span class="first">Ai</span>
+                        <span>이미지생성 : GPT, Whisk, gemini</span>
+                        <span>이미지합성 : midjourney, Whisk</span>
+                    </li>
+                    <li class="special">
+                        <div class="left">
+                            <span class="first">Font</span>
+                            <span>심플하고 가독성 높은 폰트 사용</span>
+                        </div>
+                        <div class="right">
+                            <span class="font">Font</span>
+                            <span class="sun"></span>
+                            <span class="tt">Pretnedard</span>
+                        </div>
+                    </li>
+                    <li class="special2">
+                        <div class="left">
+                            <span class="first">Tools</span>
+                            <span>Figma - 와이어프레임 및 UI 디자인</span>
+                            <span>Photoshop - 이미지 편집</span>
+                            <span>Ai - 이미지 생성</span>
+                        </div>
+                        <div class="right">
+                            <span class="figma">Figma</span>
+                            <span class="ps">Photoshop</span>
+                            <span class="ai">Ai</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="first">Pages</span>
+                        <span>full page</span>
+                    </li>
+                    <li>
+                        <span class="first">Result</span>
+                        <span>이번 프로젝트의 결과물은 주얼리(팔찌) 브랜드의 상세페이지 디자인.</span>
+                        <span>브랜드의 고급스러움과 트렌디함을 강조하기 위해 미니멀하고 세련된 톤앤매너를 적용했습니다.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION 10 -->
+        <section class="section10">
+            <div class="img1">
+                <img src="images/section9_bg2.png" alt="">
+            </div>
+            <div class="img2">
+                <img src="images/section9_hand1.png" alt="">
+                <img src="images/section9_hand2.png" alt="">
+                <img src="images/section9_hand3.png" alt="">
+                <img src="images/section9_hand4.png" alt="">
+                <img src="images/section9_hand5.png" alt="">
+            </div>
+            <div class="bannerbox swiper">
+                <ul class="banner swiper-wrapper">
+                    <li class="swiper-slide">
+                        <figure><img src="images/banner_1.png" alt="배너이미지"></figure>
+                        <figure class="red"><img src="images/banner_stickerred1.png" alt="테이프"></figure>
+                    </li>
+                    <li class="swiper-slide">
+                        <figure><img src="images/banner_2.png" alt="배너이미지"></figure>
+                        <figure class="red"><img src="images/banner_stickerred2.png" alt="테이프"></figure>
+                    </li>
+                    <li class="swiper-slide">
+                        <figure><img src="images/banner_3.png" alt="배너이미지"></figure>
+                        <figure class="red"><img src="images/banner_stickerred3.png" alt="테이프"></figure>
+                    </li>
+                    <li class="swiper-slide">
+                        <figure><img src="images/banner_4.png" alt="배너이미지"></figure>
+                        <figure class="tape"><img src="images/banner_tape1.png" alt="테이프"></figure>
+                    </li>
+                    <li class="swiper-slide">
+                        <figure><img src="images/banner_5.png" alt="배너이미지"></figure>
+                        <figure class="tape"><img src="images/banner_tape2.png" alt="테이프"></figure>
+                    </li>
+                    <li class="swiper-slide">
+                        <figure><img src="images/banner_6.png" alt="배너이미지"></figure>
+                        <figure class="tape"><img src="images/banner_tape3.png" alt="테이프"></figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION 11 -->
+        <section class="section11">
+        </section>
+
+        <!-- SECTION 12 -->
+        <section class="section12">
+        </section>
     </div>
 
 
 
 
 
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
+    <!-- 부드러운스크롤 -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+
+    <!-- 글자쪼개기 -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <script>
+        var swiper = new Swiper(".bannerbox", {
+            spaceBetween: 40,
+            slidesOffsetBefore: 40,  // 첫 번째 아이템 왼쪽 여백
+            slidesOffsetAfter: 40,   // 마지막 아이템 오른쪽 여백
+            autoplay: {
+                delay: 2500,
+                disbleOnInteraction: false,
+            },
+            // loop: true,
+            slidesPerView: 1,   // 기본 (모바일)
+            spaceBetween: 28,
+
+            // 반응형 옵션
+            breakpoints: {
+                640: {  // 화면이 640px 이상일 때
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1024: { // 화면이 1024px 이상일 때
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1440: { // 화면이 1440px 이상일 때
+                    slidesPerView: 4.8,
+                    spaceBetween: 28,
+                },
+            },
+        });
+    </script>
+
+    <!-- <script>
+        window.addEventListener('scroll', () => {
+            // 스크롤이 멈춘 후 위치를 저장하기 위해 setTimeout 사용
+            clearTimeout(window.scrollTimer);
+            window.scrollTimer = setTimeout(() => {
+                localStorage.setItem('scrollPosition', window.scrollY);
+            }, 100);
+        });
+
+        window.addEventListener('load', () => {
+            const scrollPosition = localStorage.getItem('scrollPosition');
+            if (scrollPosition) {
+                window.scrollTo(0, parseInt(scrollPosition));
+            }
+        });
+    </script> -->
 </body>
 
 </html>
