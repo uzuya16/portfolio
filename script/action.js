@@ -24,6 +24,23 @@ function checkAllImagesLoaded() {
 
 
 
+// Ctrl + 휠 확대/축소 막기
+window.addEventListener("wheel", function(e) {
+  if (e.ctrlKey) {
+    e.preventDefault();
+  }
+}, { passive: false });
+
+// Ctrl + (+, -, 0) 막기
+window.addEventListener("keydown", function(e) {
+  if (e.ctrlKey && (
+      e.key === '+' || e.key === '-' || e.key === '=' || e.key === '0')) {
+    e.preventDefault();
+  }
+});
+
+
+
 //마우스 따라다니는 원
 const circle = document.querySelector('.circle');
 
@@ -103,7 +120,7 @@ gsap.timeline({
   .to(".top_red", {
     autoAlpha:0
   })
-  .to(".sign", {
+  .to(".section1 .sign", {
     scale:0,
   }, 'sign')
   .to(".top_box", {
@@ -122,44 +139,45 @@ gsap.timeline({
     fontSize:'3rem',
     opacity:0.5
   },'mainText').to(".mainLast", {
-    fontSize:'7.8rem',
+    fontSize:'7rem',
   },'mainText')
 
 
 
 
+// 기존 timeline (point, plus 애니메이션들)
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section2",
+    start: "top top",
+    end: "bottom top",
+    scrub: true,
+    pin:true,
+  }
+})
+.from(".section2 .left", { autoAlpha:0, y:30, ease:'sine.inOut' })
+.from(".section2 .center", { autoAlpha:0, y:30, ease:'sine.inOut' })
+.from(".section2 .right", { autoAlpha:0, y:30, ease:'sine.inOut' })
+.to(".section2 .point_1", {x:-217, ease:'sine.inOut'}, 'p1')
+.to(".section2 .plus1", {rotate:360, ease:'sine.inOut'}, 'p1')
+.to(".section2 .point_2", {x:-300, ease:'sine.inOut'}, 'p2')
+.to(".section2 .plus2", {rotate:360, ease:'sine.inOut'}, 'p2')
+.to(".section2 .point_3", {x:-70, ease:'sine.inOut'}, 'p3')
+.to(".section2 .plus3", {rotate:360, ease:'sine.inOut'}, 'p3')
+.to(".section2 .point_4", {x:-310, ease:'sine.inOut'}, 'p4')
+.to(".section2 .plus4", {rotate:360, ease:'sine.inOut'}, 'p4');
 
-  // section2
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".section2",
-      start: "top top",
-      end: "bottom top",
-      scrub: true,
-      pin:true,
-      // markers:true,
-    }
-  }).from(".section2 .left", {
-      autoAlpha:0,
-      y:30,ease:'sine.inOut'
-    }).from(".section2 .center", {
-      autoAlpha:0,
-      y:30,ease:'sine.inOut'
-    }).from(".section2 .right", {
-      autoAlpha:0,
-      y:30,ease:'sine.inOut'
-    })
-    .to(".section2 .point_1", {x:-217,ease:'sine.inOut'}, 'p1')
-    .to(".section2 .plus1", {rotate:360,ease:'sine.inOut'}, 'p1')
-    .to(".section2 .point_2", {x:-300,ease:'sine.inOut'}, 'p2')
-    .to(".section2 .plus2", {rotate:360,ease:'sine.inOut'}, 'p2')
-    .to(".section2 .point_3", {x:-70,ease:'sine.inOut'}, 'p3')
-    .to(".section2 .plus3", {rotate:360,ease:'sine.inOut'}, 'p3')
-    .to(".section2 .point_4", {x:-310,ease:'sine.inOut'}, 'p4')
-    .to(".section2 .plus4", {rotate:360,ease:'sine.inOut'}, 'p4')
-
-
-
+// side-title만 독립 타임라인
+gsap.from(".side-title", {
+  scrollTrigger: {
+    trigger: ".section2",
+    start: "top top",
+    end: "bottom top",
+    scrub: true,
+  },
+  top: "-200px",
+  ease: "sine.inOut"
+});
 
 
 
@@ -178,7 +196,7 @@ gsap.timeline({
         stagger:0.5,
         scale:0.5,
         duration:10,
-        ease:'back.inOut(3)'
+        ease:'power1.inOut(3)'
       })
       
 
@@ -233,7 +251,7 @@ gsap.timeline({
 
 
 
-      // section4 좌우효과
+// section4 좌우효과
 // -----------------------------
 // 1) 높이 계산
 // -----------------------------
@@ -260,12 +278,12 @@ let contentAnim = gsap.timeline({
   ease:'expo.inOut'
 }, 'part4')
 .to(".section4 .part4_left", {
-  left:'-70%',
+  left:'-1100px',
   marginTop:'-25%',
   ease:'expo.inOut'
 }, 'part4')
 .to(".section4 .part4_right", {
-  right:'-60%',
+  right:'-900px',
   marginTop:'-30%',
   ease:'expo.inOut'
 }, 'part4')
@@ -305,6 +323,8 @@ let contentAnim = gsap.timeline({
   bottom:0,
   ease:'expo.inOut'
 }, 'part42')
+
+
 // -----------------------------
 // 3) 이미지(li) ↔ 텍스트 박스 매칭
 // -----------------------------
@@ -379,7 +399,7 @@ document.querySelectorAll('.section58').forEach(function(part58){
     pin:true,
     anticipatePin: 1,
     pinSpacing:true,
-    markers:true,
+    // markers:true,
   }
 }).to(part58Round, {
     x:800,
@@ -585,7 +605,6 @@ document.querySelectorAll('.section58').forEach(function(part58){
 //     duration:100,
 //     ease:'linear'
 // }, 'mobile1')
-gsap.registerPlugin(ScrollTrigger);
 
 let hands = gsap.utils.toArray(".section10 .img2 img");
 
@@ -598,14 +617,16 @@ let tl = gsap.timeline({
     scrub: true,
     pin: true,
     anticipatePin: 1,
-    markers: true
+    // markers: true
   }
 });
 
 // 손 애니메이션은 전체 구간의 일부에서만 진행 (빨리 진행)
 let handDuration = 0.4; // 전체 구간의 40%에서만 손 애니메이션 진행
 let handStartProgress = 0.1; // 10% 지점에서 시작
-
+// 처음에 첫 번째 이미지를 보이게
+hands.forEach(h => h.classList.remove("active"));
+if (hands[0]) hands[0].classList.add("active");
 // 손 애니메이션을 위한 별도 타임라인
 hands.forEach((hand, i) => {
   let progress = handStartProgress + (i / hands.length) * handDuration;
@@ -631,3 +652,38 @@ tl.to(".section10 .bannerbox .banner", {
   duration: 0.3,
   ease: "power2.inOut"
 }, 0.7); // 70% 지점에서 배너 슬라이드
+
+
+
+
+
+
+  //section11
+  gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section11",
+    start: "top center",
+    end: "bottom center",
+    scrub: true,
+    anticipatePin: 1,
+    // markers:true
+  }
+}).from(".section11 img", {
+  x:'50%',
+  y:'50%',
+  autoAlpha:0,
+  stagger:0.5,
+    ease:'expo.inOut'
+}, 'mobile1')
+
+
+
+gsap.to(".side-title", {
+  scrollTrigger: {
+    trigger: ".section12",
+    start: "top center",      // section12가 화면 중앙에 오면
+    end: "bottom center",     // section12가 화면 중앙을 벗어나면
+    toggleClass: {targets: ".section12", className: "on"},
+    // markers: true   // 디버깅용
+  }
+});
