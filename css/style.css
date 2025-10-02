@@ -1,8 +1,9 @@
 @charset "UTF-8";@import url(font.css); @import url(reset.css);
 body { color: #050505; font-family: 'SpoqaHanSansNeo-Regular'; overflow-x: hidden; background: #FFFDF5; } 
 .wrap { } 
-
-
+body {position: relative;overflow-x: hidden;}
+.centerbox {width: 1440px; margin: 0 auto;}
+.side-title {}
 
 
 span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; border-radius: 50%; background: url('../images/sec2img.png'); background-size: cover; border: 1px solid rgba(0,0,0,0.5); pointer-events: none; transition: 0s; /* transform: translate(-50%, -50%); */
@@ -49,18 +50,18 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
  0% { opacity: 1; } 
  100% { opacity: 0; } 
  }*/ 
-.sign .title { font-size: 14px; color: #fff; letter-spacing: 0.2em; position: absolute; top: -26px; /* animation: signTitle 0.3s forwards; animation-delay: 3s; transform-origin: right; */ line-height: 1.1; } 
+.section1 .sign .title { font-size: 14px; color: #fff; letter-spacing: 0.2em; position: absolute; top: -26px; /* animation: signTitle 0.3s forwards; animation-delay: 3s; transform-origin: right; */ line-height: 1.1; } 
 /* @keyframes signTitle { 
  0% { transform: rotate(0deg); font-style: normal; } 
  100% { transform: rotate(-10deg); font-style: italic; } 
  }*/
-.sign { position: absolute; width: 270px; height: 100px; z-index: 1; top: 50%; left: 50%; transform:translate(-50%,-50%); animation: sign_box 2s forwards; } 
+.section1 .sign { position: absolute; width: 270px; height: 100px; z-index: 1; top: 50%; left: 50%; transform:translate(-50%,-50%); animation: sign_box 2s forwards; } 
 @keyframes sign_box { 
  0% { margin-left: 0px; } 
  100% { margin-left: 0px; } 
  }
-.sign .name { position: absolute; } 
-.sign svg { position: absolute; animation: sign 3s forwards; stroke-dasharray: 0px; stroke-dashoffset: 0px; } 
+.section1 .sign .name { position: absolute; } 
+.section1 .sign svg { position: absolute; animation: sign 3s forwards; stroke-dasharray: 0px; stroke-dashoffset: 0px; } 
 /* @keyframes sign { 
  0% { stroke-dashoffset: 300px; } 
  100% { stroke-dashoffset: 0px; } 
@@ -68,50 +69,52 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 
  
  /* 이름싸인 */
-.sign .name1 { left: 3px; top: 32px; } 
-.sign .name1 svg { stroke-dasharray: 120; stroke-dashoffset: 120; animation: sign1 .3s forwards; animation-delay:0.5s } 
+.section1 .sign .name1 { left: 3px; top: 32px; } 
+.section1 .sign .name1 svg { stroke-dasharray: 120; stroke-dashoffset: 120; animation: sign1 .3s forwards; animation-delay:0.5s } 
 @keyframes sign1 { 
  0% { stroke-dashoffset: 120; } 
  100% { stroke-dashoffset: 0; } 
  }
-.sign .name2 { left: 32px; top: 20px; } 
-.sign .name2 svg { stroke-dasharray: 110; stroke-dashoffset: 110; animation: sign2 .3s forwards; animation-delay:0.7s } 
+.section1 .sign .name2 { left: 32px; top: 20px; } 
+.section1 .sign .name2 svg { stroke-dasharray: 110; stroke-dashoffset: 110; animation: sign2 .3s forwards; animation-delay:0.7s } 
 @keyframes sign2 { 
  0% { stroke-dashoffset: 110; } 
  100% { stroke-dashoffset:0; } 
  }
-.sign .name3 { left: 30px; top: 72px; } 
-.sign .name3 svg { stroke-dasharray: 85; stroke-dashoffset: 85; animation: sign3 .3s forwards; animation-delay:0.9s } 
+.section1 .sign .name3 { left: 30px; top: 72px; } 
+.section1 .sign .name3 svg { stroke-dasharray: 85; stroke-dashoffset: 85; animation: sign3 .3s forwards; animation-delay:0.9s } 
 @keyframes sign3 { 
  0% { stroke-dashoffset: 85; } 
  100% { stroke-dashoffset:0; } 
  }
-.sign .name4 { left: 87px; top: 20px; } 
-.sign .name4 svg { stroke-dasharray: 200; stroke-dashoffset: 200; animation: sign4 .3s forwards; animation-delay:1.1s } 
+
+.section1 .sign .name4 { left: 87px; top: 20px; } 
+.section1 .sign .name4 svg { stroke-dasharray: 200; stroke-dashoffset: 200; animation: sign4 .3s forwards; animation-delay:1.1s } 
 @keyframes sign4 { 
  0% { stroke-dashoffset: 200; } 
  100% { stroke-dashoffset:0; } 
  }
-.sign .name5 { left: 130px; top:0; } 
-.sign .name5 svg { stroke-dasharray: 205; stroke-dashoffset: 205; animation: sign5 .3s forwards; animation-delay:1.3s } 
+.section1 .sign .name5 { left: 130px; top:0; } 
+.section1 .sign .name5 svg { stroke-dasharray: 205; stroke-dashoffset: 205; animation: sign5 .3s forwards; animation-delay:1.3s } 
 @keyframes sign5 { 
  0% { stroke-dashoffset: 205; } 
  100% { stroke-dashoffset:0; } 
  }
-.sign .name6 { left: 190px; top: 10px; } 
-.sign .name6 svg { stroke-dasharray: 112; stroke-dashoffset: 112; animation: sign6 .3s forwards; animation-delay:1.5s } 
+
+.section1 .sign .name6 { left: 190px; top: 10px; } 
+.section1 .sign .name6 svg { stroke-dasharray: 112; stroke-dashoffset: 112; animation: sign6 .3s forwards; animation-delay:1.5s } 
 @keyframes sign6 { 
  0% { stroke-dashoffset: 112; } 
  100% { stroke-dashoffset:0; } 
  }
-.sign .name7 { left: 224px; top: -20px; } 
-.sign .name7 svg { stroke-dasharray: 82; stroke-dashoffset: 82; animation: sign7 .3s forwards; animation-delay:1.7s } 
+.section1 .sign .name7 { left: 224px; top: -20px; } 
+.section1 .sign .name7 svg { stroke-dasharray: 82; stroke-dashoffset: 82; animation: sign7 .3s forwards; animation-delay:1.7s } 
 @keyframes sign7 { 
  0% { stroke-dashoffset: 82; } 
  100% { stroke-dashoffset:0; } 
  }
-.sign .name8 { left: 208px; top: 60px; } 
-.sign .name8 svg { stroke-dasharray: 70; stroke-dashoffset: 70; stroke-dashoffset: 70; animation: sign8 1.5s forwards; animation-delay:1.8s } 
+.section1 .sign .name8 { left: 208px; top: 60px; } 
+.section1 .sign .name8 svg { stroke-dasharray: 70; stroke-dashoffset: 70; stroke-dashoffset: 70; animation: sign8 1.5s forwards; animation-delay:1.8s } 
 @keyframes sign8 { 
  0% { stroke-dashoffset: 70; } 
  100% { stroke-dashoffset:0; } 
@@ -125,8 +128,8 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 /* SECTION (1) */
 .section1 {width: 100%; height: 100vh; margin-top : 0; background: #000; } 
 .section1 video {width: 100%; height: 100%; object-fit: cover;}
-.main_content {margin-left: 100px; margin-top: 100px; font-family: 'GMarketSans'; position: relative; z-index: 10;}
-.main .main_content .main_title {font-size: 15rem; display: flex; flex-direction: column; letter-spacing: -0.10em; font-weight: bold; line-height: 1;}
+.main_content {margin-left: 100px; margin-top: 100px; font-family: 'GMarketSans'; position: relative;position: relative; z-index: 2;}
+.main .main_content .main_title {font-size: 15rem; display: flex; flex-direction: column; letter-spacing: -0.10em; font-weight: bold; line-height: 1; }
 .main .main_content .main_title span {}
 .main .main_content .main_tt span {font-size: 5rem; display: flex; flex-direction: column; font-weight: 100; letter-spacing: -0.08em; margin-top: -20px;}
 .main .main_content .main_tt span.last {font-size: 4rem; font-weight: normal; margin-top: 20px;}
@@ -137,7 +140,7 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section2 { margin:100px 0; padding: 60px 0}
 .section2 .centerbox { display: grid; grid-template-columns: 174px 1fr; margin: 0 auto;} 
 .section2 .centerbox .menu-box { border: 1.5px solid #E24126; padding: 125px 50px; border-radius: 90px 0 90px 0; } 
-.side-title { writing-mode: vertical-rl; transform: rotate(180deg); display: flex; align-items: center; font-size: 18em; color: #e24126; font-family: 'SpoqaHanSansNeo-Light';} 
+.side-title { writing-mode: vertical-rl; transform: rotate(180deg); display: flex; align-items: center; font-size: 18em; color: #e24126; font-family: 'SpoqaHanSansNeo-Light'; position: relative;} 
 .side-title span {font-family: "Tangerine";}
 
 .menu-box { display: flex; flex-direction: column; position: relative;} 
@@ -187,9 +190,9 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section3 .note_b .grid-box > div { border-bottom: 1px solid #BE432F; padding: 15px; position: relative; }
 .section3 .note_b .grid-box .profile { grid-row: 1 / 4; border-right: 1px solid #BE432F; padding: 0 0; padding-top: 80px; } 
 
-.section3 .note_b .grid-box .profile .circle {width: 200px; height: 200px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: 50%; background: url(../images/nana.png) no-repeat top; transition: 1s; }
+.section3 .note_b .grid-box .profile .circle {width: 200px; height: 200px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: 50%; background: url(../images/na.png) center; transition: 1s; background-size: 300%;}
 .section3 .note_b .grid-box .profile .circle2 {position: absolute; top: 50%; left: 50%; border: 1px solid #BE432F; width: 300px; height: 300px; transform: translate(-50%,-50%); border-radius: 50%; transition: 1s; transition-delay: 0.2s;}
-.section3 .note_b .grid-box .profile.on .circle {width: 340px; height: 340px;}
+.section3 .note_b .grid-box .profile.on .circle {width: 340px; height: 340px; background-size: 100%;}
 .section3 .note_b .grid-box .profile.on .circle2 {width: 440px; height: 440px; }
 
 
@@ -219,13 +222,13 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 /* SECTION (4) */
 .section4 {width: 100%; height: 100vh; background: #BE432F; position: relative; overflow: hidden;} 
 .section4 .content {text-align: center;}
-.section4 .content img {width: 400px;}
+.section4 .content img {max-width: 350px;}
 .section4 .content li:nth-child(1) {padding-bottom: 200px;}
 
-.section4 .textwrap {position: absolute; width: 100%; height: 100vh; top: 0; font-size: 4rem; color: #fffdf5; z-index: 10;}
+.section4 .textwrap {position: absolute; width: 100%; height: 100vh; top: 0; font-size: 3rem; color: #fffdf5; z-index: 10;}
 .section4 .textbox {position: absolute; width: 20%; height: 300px; top: 0; left: 0;}
-/* .section4 .textbox li {position: absolute;} */
-.section4 .textbox .tt_last {font-size: 2rem;}
+
+.section4 .textbox .tt_last {font-size: 1.6rem;}
 
 .section4 .textwrap .textbox {
     opacity: 0;
@@ -233,6 +236,8 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
     position: absolute;
     top: 0;
     transition: opacity 0.6s ease;
+    width: 100%;
+    height: 100%;
   }
   
   .section4 .textwrap .textbox.on {
@@ -245,6 +250,18 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
     opacity: 0;
   }
   
+  .section4 .textbox li {position: absolute; max-width: 330px ;}
+  .section4 .textbox .typo { width: 250px; top: 30px; left: 30px;}
+  .section4 .textbox .color { top: 650px; left: 30px;}
+  .section4 .textbox .contri { top: 800px; left: 30px; }
+  
+  .section4 .textbox .font {top: 30px; right: 230px}
+  .section4 .textbox .review { top: 170px; right: 230px; }
+  .section4 .textbox .timeline { top: 68%; right: 114px;}
+  .section4 .textbox .target { top: 80%; right: 11px; }
+
+
+
 
 .section4 .svg_box {position: absolute; width: 100%; left: 0; top: 0; }
 .section4 .svg_box .part4_left {position: absolute; left: -10%; top: -1px;}
@@ -263,7 +280,7 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section58_wrap .point_top .point_star3 { left:40px;} 
 .section58_wrap .point_top .point_star4 { left:10px;} 
 .section58_wrap .round { width: 1004px; height: 1004px; border-top-left-radius: 700px; border-top-right-radius: 700px; position: absolute; bottom: 0; left: 118px; transform: translateY(50%); } 
-.section58 .notebook {transform: scale(0.8);}
+.section58 .notebook {transform: scale(0.7);}
 .section58 .notebook .notebook_screen img {position: absolute; left: 0; top: 0;}
 
 /* .line { height: .8px;  background: #C3503C; }  */
@@ -272,12 +289,12 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section5 .point_bottom2 { position: absolute; bottom: 50px; transform: translateY(21px); right: 239px; } 
 .section5 .line1 { position: absolute; top: 50px; } 
 .section5 .line2 { position: absolute; bottom: 50px; }  */
-.section5 .round { background: #8EBBDB;/* width: 1004px;  height: 502px; border-top-left-radius: 700px; border-top-right-radius: 700px; */ /* position: absolute; bottom: 51px; left: 118px; */ } 
+.section5 .round { background: #d9ebf7;/* width: 1004px;  height: 502px; border-top-left-radius: 700px; border-top-right-radius: 700px; */ /* position: absolute; bottom: 51px; left: 118px; */ } 
 .section5 .swim { position: absolute; left: 0; top: 145px; z-index: 1; } 
-.section5 .notebook { position: absolute; bottom: 90px; left: 105px; display: flex; flex-direction: column; } 
+.section58_wrap .notebook { position: absolute; bottom: 90px; left: -50px; display: flex; flex-direction: column; } 
 .section5 .notebook .notebook_screen { position: absolute; top: 12%; left: 11.8%; width: 794px; height: 497px; background: #fff; overflow: hidden; border-radius: 5px; box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); } 
 .section5 .notebook span { font-family: 'SpoqaHanSansNeo-Thin'; display: block; font-size: 4rem; font-weight: 100; letter-spacing: -0.11em; text-align: center; color: #6596ac; } 
-.section5 .textbox { position: absolute; left: 60%; bottom: 105px; } 
+.section58_wrap .textbox { position: absolute; left: 57%; bottom: 105px; } 
 .section5 .textbox ul { display: flex; flex-direction: column; gap: 22px; } 
 .section5 .textbox ul li { display: flex; flex-direction: column; gap: 5px; } 
 .section5 .textbox ul li img { width: 40px; } 
@@ -298,9 +315,9 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section6 .point_bottom2 { position: absolute; bottom: 50px; transform: translateY(21px); right: 239px; } 
 .section6 .line1 { position: absolute; top: 50px; } 
 .section6 .line2 { position: absolute; bottom: 50px; }  */
-.section6 .round { background: #CD7632;/*  width: 1004px; height: 502px; background: #CD7632; border-top-left-radius: 700px; border-top-right-radius: 700px; position: absolute; bottom: 51px; left: 118px; */ } 
+.section6 .round { background: #cfab8f;/*  width: 1004px; height: 502px; background: #CD7632; border-top-left-radius: 700px; border-top-right-radius: 700px; position: absolute; bottom: 51px; left: 118px; */ } 
 .section6 .bread { position: absolute; left: 0; bottom: 35px; z-index: 10; } 
-.section6 .notebook { position: absolute; bottom: 90px; left: 105px; display: flex; flex-direction: column; } 
+.section6 .notebook { position: absolute; bottom: 90px; display: flex; flex-direction: column; } 
 .section6 .notebook span { font-family: 'SpoqaHanSansNeo-Thin'; display: block; font-size: 4rem; font-weight: 100; letter-spacing: -0.11em; text-align: center; color: #CD7632; } 
 .section6 .notebook .notebook_screen { position: absolute; top: 12%; left: 11.8%; width: 794px; height: 497px; background: #fff; overflow: hidden; border-radius: 5px; box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); } 
 .section6 .textbox { position: absolute; left: 60%; bottom: 105px; } 
@@ -325,9 +342,9 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section7 .point_bottom2 { position: absolute; bottom: 50px; transform: translateY(21px); right: 239px; } 
 .section7 .line1 { position: absolute; top: 50px; } 
 .section7 .line2 { position: absolute; bottom: 50px; }  */
-.section7 .round {background: #087CAD; /*  width: 1004px; height: 502px; border-top-left-radius: 700px; border-top-right-radius: 700px; position: absolute; bottom: 51px; left: 118px;  */} 
-.section7 .angel { position: absolute; left: 78px; top: 50px; z-index: 10; } 
-.section7 .notebook { position: absolute; bottom: 90px; left: 105px; display: flex; flex-direction: column; } 
+.section7 .round {background: #88b8cc; /*  width: 1004px; height: 502px; border-top-left-radius: 700px; border-top-right-radius: 700px; position: absolute; bottom: 51px; left: 118px;  */} 
+.section7 .angel { position: absolute; left: -2.5%; top: -35%; z-index: 10; } 
+.section7 .notebook { position: absolute; bottom: 90px; display: flex; flex-direction: column; } 
 .section7 .notebook .notebook_screen { position: absolute; top: 12%; left: 11.8%; width: 794px; height: 497px; background: #fff; overflow: hidden; border-radius: 5px; box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.4); } 
 .section7 .notebook span { font-family: 'SpoqaHanSansNeo-Thin'; display: block; font-size: 4rem; font-weight: 100; letter-spacing: -0.11em; text-align: center; color: #087CAD; } 
 .section7 .textbox { position: absolute; left: 60%; bottom: 105px; } 
@@ -346,17 +363,19 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 
 /* SECTION (8) */
 .section8 { width: 100%; height: 100vh; position: relative; background: url(../images/section_bg.png) no-repeat center; } 
-.section8 .round {background: #BE432F;/*  width: 1004px; height: 502px;  border-top-left-radius: 700px; border-top-right-radius: 700px; position: absolute; bottom: 51px; left: 118px;  */} 
+.section8 .round {background: #899cda;/*  width: 1004px; height: 502px;  border-top-left-radius: 700px; border-top-right-radius: 700px; position: absolute; bottom: 51px; left: 118px;  */} 
 .section8 .alphbet { width: 90%; position: absolute; top: 10%; } 
 /* .section8 .line1 { position: absolute; top: 50px; } 
 .section8 .line2 { position: absolute; bottom: 50px; } 
 .section8 .point_top { position: absolute; top: 50px; transform: translateY(-25px); left: 164px; } 
 .section8 .point_bottom1 { position: absolute; bottom: 50px; transform: translateY(21px); right: 165px; } 
 .section8 .point_bottom2 { position: absolute; bottom: 50px; transform: translateY(21px); right: 239px; }  */
-.section8 .tab { position: absolute; bottom: 105px; left: 260px; display: flex; flex-direction: column; } 
-.section8 .tab .tab_screen { position: absolute; top: 14%; left: 1.8%; width: 675px; height: 514px; background: #ffffff; overflow: hidden; border-radius: 10px; border: 1px solid #000000; } 
+.section8 .tab { position: absolute; bottom: 105px; left: 30px; display: flex; flex-direction: column; } 
+.section8 .tab .tab_box { transform: scale(0.8);} 
+.section8 .tab .tablet { transform: scale(0.8);} 
+.section8 .tab .tab_screen { position: absolute; top: 14%; left: 12%; width: 675px; height: 514px; background: #ffffff; overflow: hidden; border-radius: 10px; border: 1px solid #000000; } 
 .section8 .tab .tab_screen img { width: 100%; } 
-.section8 .tab img { width: 80%; } 
+/* .section8 .tab img { width: 80%; }  */
 .section8 .tab span { width: 80%; font-family: 'SpoqaHanSansNeo-Thin'; display: block; font-size: 4rem; font-weight: 100; letter-spacing: -0.11em; text-align: center; color: #BE432F; } 
 .section8 .textbox { position: absolute; left: 60%; bottom: 105px; } 
 .section8 .textbox ul { display: flex; flex-direction: column; gap: 22px; } 
@@ -373,14 +392,14 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 
 
 /* SECTION (9) */
-.section9 { width: 100%; min-height: 100vh; background: url(../images/section9_bg.png); overflow: hidden; background-size: auto; position: relative;  display: flex; justify-content: center; gap: 40px; padding: 100px 0; margin-bottom: 0;;} 
+.section9 { width: 100%; min-height: 100vh; background: url(../images/section9_bg.png); overflow: hidden; background-size: auto; position: relative;  display: flex; justify-content: center; gap: 40px; padding: 100px 0; margin-bottom: 0; margin-top: 100px;} 
 .section9 .iphone { position: relative; width: 424px; top: 3%; z-index: 10; ;} 
 .section9 .page_view {position: absolute; width: 80%; height:64%; top: 50%; left: 50%; transform: translate(-50%,-67%); border-radius: 40px; overflow: hidden;;} 
 .section9 .page_view img {width: 100%; opacity: 0;} 
 .section9 .page {position: absolute; top: 80px; left: 50%; transform: translateX(-130%); opacity: 70%; z-index: -1; } 
 
 
-.section9 .textbox { position: relative;  border: 1px solid lime} 
+.section9 .textbox { position: relative; } 
 .section9 .textbox ul { display: flex; flex-direction: column; gap: 40px; font-size: 2rem; } 
 .section9 .textbox ul li { display: flex; flex-direction: column; gap: 5px; color: #FFFDF5; font-family: 'SpoqaHanSansNeo-Thin' } 
 .section9 .textbox ul li img { width: 40px; } 
@@ -402,19 +421,20 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section9 .textbox ul li.special2 .right span.ai { width: 150px; height: 150px; border: 1px solid #FFFDF5; border-radius: 150px; display: flex; justify-content: center; align-items: center; margin-left: -30px; } 
 
 
+
 /* SECTION (10) */
 .section10 { width: 100%; height: 100vh; background: url(../images/section10_bg.png) no-repeat; background-size: auto; position: relative; z-index: 0; margin-top: 0; overflow: hidden;} 
 .section10::before { content: ""; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: 1; position: absolute; top: 0; left: 0; } 
-.section10 .img1 {position: absolute; width: 100%; top: 0; z-index: 3;pointer-events: none; }
-.section10 .img2 {position: absolute; width: 100%; top: 0; z-index: 4;pointer-events: none; border: 1px solid #000;}
+.section10 .img1 {position: absolute; width: 100%; top: -80px; z-index: 3;pointer-events: none;}
+.section10 .img2 {position: absolute; width: 100%; top: -80px; z-index: 4;pointer-events: none;}
 .section10 .img2 img {}
 .section10 .bannerbox {position: relative; height: 100%; z-index: 2; } 
 .section10 .bannerbox .banner {height: 100%; display: flex; align-items: center; padding-top: 100px; /* gap: 35px; */  } 
 .section10 .bannerbox .banner li {width: 400px; background: #FFFDF5; display: flex; justify-content: center; padding: 30px 35px; z-index: 10; border-radius: 10px; padding-bottom: 150px; border: 1px solid #ececec;flex-shrink: 0; } 
 .section10 .bannerbox .banner li img {width: 100%;} 
 .section10 .bannerbox .banner li:hover { background: #BE432F; } 
-.section10 .bannerbox .banner li .red { position: absolute; top: 4%; } 
-.section10 .bannerbox .banner li .tape { position: absolute; top: 4%; } 
+/* .section10 .bannerbox .banner li .red { position: absolute; top: 4%; } 
+.section10 .bannerbox .banner li .tape { position: absolute; top: 4%; }  */
 .section10 .img2 img { 
   display: none; 
 }
@@ -427,5 +447,73 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
  .screen img { width: 100%; position: absolute; top: 0; left: 0;  } 
 
 
- .section11 {height: 100vh; background: purple; border: 10px solid #000; margin: 0 !important;}
- .section12 {height: 100vh; background:blue; margin: 0;}
+ .section11 {background: url('../images/bg.jpg'); margin: 0 !important;}
+ .section11 .centerbox {text-align: center; padding-top: 100px;}
+ .section11 .centerbox img {max-width: 800px; margin: 50px 0 }
+
+
+ 
+ .section12 {height: 100vh; margin: 0; background: url('../images/bg.jpg');background: url('../images/bg.jpg'); position: relative; }
+ /* 이름싸인 */
+.section12 .sign { position: absolute; width: 270px; height: 100px; z-index: 1; top: 50%; left: 50%; transform:translate(-50%,-50%); animation: sign_box 2s forwards; } 
+@keyframes sign_box { 
+ 0% { margin-left: 0px; } 
+ 100% { margin-left: 0px; } 
+}
+.section12.on .sign .title { font-size: 14px; color: #fff; letter-spacing: 0.2em; position: absolute; top: -26px; animation: signTitle 0.3s forwards; animation-delay: 3s; transform-origin: right; line-height: 1.1; } 
+.section12.on .sign .name { position: absolute; } 
+.section12.on .sign svg { position: absolute; animation: sign 3s forwards; stroke-dasharray: 0px; stroke-dashoffset: 0px; } 
+
+
+.section12.on .sign .name1 { left: 3px; top: 32px; } 
+.section12.on .sign .name1 svg { stroke-dasharray: 120; stroke-dashoffset: 120; animation: sign1 .3s forwards; animation-delay:0.5s } 
+@keyframes sign1 { 
+ 0% { stroke-dashoffset: 120; } 
+ 100% { stroke-dashoffset: 0; } 
+ }
+.section12.on .sign .name2 { left: 32px; top: 20px; } 
+.section12.on .sign .name2 svg { stroke-dasharray: 110; stroke-dashoffset: 110; animation: sign2 .3s forwards; animation-delay:0.7s } 
+@keyframes sign2 { 
+ 0% { stroke-dashoffset: 110; } 
+ 100% { stroke-dashoffset:0; } 
+ }
+.section12.on .sign .name3 { left: 30px; top: 72px; } 
+.section12.on .sign .name3 svg { stroke-dasharray: 85; stroke-dashoffset: 85; animation: sign3 .3s forwards; animation-delay:0.9s } 
+@keyframes sign3 { 
+ 0% { stroke-dashoffset: 85; } 
+ 100% { stroke-dashoffset:0; } 
+ }
+
+.section12.on .sign .name4 { left: 87px; top: 20px; } 
+.section12.on .sign .name4 svg { stroke-dasharray: 200; stroke-dashoffset: 200; animation: sign4 .3s forwards; animation-delay:1.1s } 
+@keyframes sign4 { 
+ 0% { stroke-dashoffset: 200; } 
+ 100% { stroke-dashoffset:0; } 
+ }
+.section12.on .sign .name5 { left: 130px; top:0; } 
+.section12.on .sign .name5 svg { stroke-dasharray: 205; stroke-dashoffset: 205; animation: sign5 .3s forwards; animation-delay:1.3s } 
+@keyframes sign5 { 
+ 0% { stroke-dashoffset: 205; } 
+ 100% { stroke-dashoffset:0; } 
+ }
+
+.section12.on .sign .name6 { left: 190px; top: 10px; } 
+.section12.on .sign .name6 svg { stroke-dasharray: 112; stroke-dashoffset: 112; animation: sign6 .3s forwards; animation-delay:1.5s } 
+@keyframes sign6 { 
+ 0% { stroke-dashoffset: 112; } 
+ 100% { stroke-dashoffset:0; } 
+ }
+.section12.on .sign .name7 { left: 224px; top: -20px; } 
+.section12.on .sign .name7 svg { stroke-dasharray: 82; stroke-dashoffset: 82; animation: sign7 .3s forwards; animation-delay:1.7s } 
+@keyframes sign7 { 
+ 0% { stroke-dashoffset: 82; } 
+ 100% { stroke-dashoffset:0; } 
+ }
+.section12.on .sign .name8 { left: 208px; top: 60px; } 
+.section12.on .sign .name8 svg { stroke-dasharray: 70; stroke-dashoffset: 70; stroke-dashoffset: 70; animation: sign8 1.5s forwards; animation-delay:1.8s } 
+@keyframes sign8 { 
+ 0% { stroke-dashoffset: 70; } 
+ 100% { stroke-dashoffset:0; } 
+ }
+
+
