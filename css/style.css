@@ -164,10 +164,10 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .plus::before { left: 50%; top: 0; width: 2px; height: 100%; transform: translateX(-50%); } 
 .plus::after { top: 50%; left: 0; height: 2px; width: 100%; transform: translateY(-50%); } 
 
-.point_1 {position: absolute; right: 2%; top: 15.8%;}
-.point_2 {position: absolute; right: 2%; top: 28.8%;}
-.point_3 {position: absolute; right: 2%; top: 59.5%;}
-.point_4 {position: absolute; right: 2%; top: 73.3%;}
+.point_1 {position: absolute; right: 2%; top: 16.8%;}
+.point_2 {position: absolute; right: 2%; top: 29.8%;}
+.point_3 {position: absolute; right: 2%; top: 58.5%;}
+.point_4 {position: absolute; right: 2%; top: 72.3%;}
 
 
 /* SECTION (3) */
@@ -250,15 +250,16 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
     opacity: 0;
   }
   
-  .section4 .textbox li {position: absolute; max-width: 330px ;}
-  .section4 .textbox .typo { width: 250px; top: 30px; left: 30px;}
+  .section4 .textbox li {position: absolute; max-width: 300px ;}
+
+  .section4 .textbox .font {width: 250px; top: 30px; left: 30px;}
   .section4 .textbox .color { top: 650px; left: 30px;}
   .section4 .textbox .contri { top: 800px; left: 30px; }
-  
-  .section4 .textbox .font {top: 30px; right: 230px}
-  .section4 .textbox .review { top: 170px; right: 230px; }
-  .section4 .textbox .timeline { top: 68%; right: 114px;}
-  .section4 .textbox .target { top: 80%; right: 11px; }
+
+  .section4 .textbox .review { top: 10%; right: 2%; text-align: right;}  
+  .section4 .textbox .typo {top: 40%; right: 2%; text-align: right;}
+  .section4 .textbox .timeline { top: 68%; right: 2%; text-align: right;}
+  .section4 .textbox .target { top: 80%; right: 2%; text-align: right;}
 
 
 
@@ -267,13 +268,13 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section4 .svg_box .part4_left {position: absolute; left: -10%; top: -1px;}
 .section4 .svg_box .part4_right {position: absolute; right: -10%; top: -1px;}
 /* .section4 .part4_right svg {transition: 2s;} */
-.section4 .cover {content: ""; position: absolute; width: 100%; height:50px; background: linear-gradient(180deg, rgba(255,255,255,0), #fff); bottom: -50px; left: 0; z-index: 7;}
+.section4 .cover {content: ""; position: absolute; width: 100%; height:50px; background: linear-gradient(180deg, rgba(255,255,255,0), #FFFDF5); bottom: -50px; left: 0; z-index: 7;}
 
 .section58_wrap {position: relative; }
 /* .section5,.section6,.section7,.section8 {position: absolute; opacity: 0.2; margin: 0;} */
 /* SECTION (5) */
 .section58_wrap .textbox {opacity: 0;}
-.section58_wrap .point_top { position: absolute; width: 100%; height: 30px; width: 100%; border-bottom:1px solid #C3503C; top: 0px;z-index: 10; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.3);} 
+.section58_wrap .point_top { position: absolute; width: 100%; height: 30px; border-bottom:1px solid #C3503C; top: 0px; /* z-index: 10; */ backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.3);} 
 .section58_wrap .point_top .point_star { position: absolute; left: 0; bottom: 0; transform: translateY(50%);} 
 .section58_wrap .point_top .point_star1 { left:100px;} 
 .section58_wrap .point_top .point_star2 { left:70px;} 
@@ -306,6 +307,10 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section5 .textbox .colors .color_1 { display: block; width: 18px; height: 18px; background: #BBD3F4; border-radius: 18px; margin-left: 15px; } 
 .section5 .textbox .colors .color_2 { display: block; width: 18px; height: 18px; background: #C3EBF5; border-radius: 18px; } 
 .section5 .textbox .colors .color_3 { display: block; width: 18px; height: 18px; background: #0E2E5B; border-radius: 18px; } 
+
+
+.section5 .textbox ul li a {position: relative; z-index: 15; display: inline-block}
+.blocking-element {pointer-events: none;}
 
 
 /* SECTION (6) */
@@ -346,7 +351,7 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section7 .angel { position: absolute; left: -2.5%; top: -35%; z-index: 10; } 
 .section7 .notebook { position: absolute; bottom: 90px; display: flex; flex-direction: column; } 
 .section7 .notebook .notebook_screen { position: absolute; top: 12%; left: 11.8%; width: 794px; height: 497px; background: #fff; overflow: hidden; border-radius: 5px; box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.4); } 
-.section7 .notebook span { font-family: 'SpoqaHanSansNeo-Thin'; display: block; font-size: 4rem; font-weight: 100; letter-spacing: -0.11em; text-align: center; color: #087CAD; } 
+.section7 .notebook span {font-family: 'SpoqaHanSansNeo-Thin'; display: block; font-size: 4rem; font-weight: 100; letter-spacing: -0.11em; text-align: center; color: #087CAD; } 
 .section7 .textbox { position: absolute; left: 60%; bottom: 105px; } 
 .section7 .textbox ul { display: flex; flex-direction: column; gap: 22px; } 
 .section7 .textbox ul li { display: flex; flex-direction: column; gap: 5px; } 
@@ -376,7 +381,7 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
 .section8 .tab .tab_screen { position: absolute; top: 14%; left: 12%; width: 675px; height: 514px; background: #ffffff; overflow: hidden; border-radius: 10px; border: 1px solid #000000; } 
 .section8 .tab .tab_screen img { width: 100%; } 
 /* .section8 .tab img { width: 80%; }  */
-.section8 .tab span { width: 80%; font-family: 'SpoqaHanSansNeo-Thin'; display: block; font-size: 4rem; font-weight: 100; letter-spacing: -0.11em; text-align: center; color: #BE432F; } 
+.section8 .tab span {font-family: 'SpoqaHanSansNeo-Thin'; display: block; font-size: 4rem; font-weight: 100; letter-spacing: -0.11em; text-align: center; color: #BE432F; } 
 .section8 .textbox { position: absolute; left: 60%; bottom: 105px; } 
 .section8 .textbox ul { display: flex; flex-direction: column; gap: 22px; } 
 .section8 .textbox ul li { display: flex; flex-direction: column; gap: 5px; } 
