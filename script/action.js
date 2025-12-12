@@ -4,29 +4,82 @@
         // window.addEventListener('load', function() {
         //   document.querySelector('.loading-overlay').style.display = 'none';
         // });
-        window.addEventListener('load', function() {
-          document.querySelector('.loading-overlay').style.display = 'none';
-          document.querySelector('.main-content').style.opacity = '1';
-        });
 
 // ===============================
 // 이미지 로딩 체크 (필요 시 유지)
 // ===============================
-        function checkAllImagesLoaded() {
-          const images = document.querySelectorAll('img');
-          let loadedCount = 0;
+        // function checkAllImagesLoaded() {
+        //   const images = document.querySelectorAll('img');
+        //   let loadedCount = 0;
 
-          images.forEach(img => {
-            if (img.complete) {
-              loadedCount++;
-            } else {
-              img.onload = () => {
-                loadedCount++;
-                updateProgress(loadedCount / images.length * 100);
-              };
-            }
-          });
+        //   images.forEach(img => {
+        //     if (img.complete) {
+        //       loadedCount++;
+        //     } else {
+        //       img.onload = () => {
+        //         loadedCount++;
+        //         updateProgress(loadedCount / images.length * 100);
+        //       };
+        //     }
+        //   });
+        // }
+
+
+
+
+
+// =======================================
+// 로딩 시스템: 실제 리소스 로딩 퍼센트 계산
+// =======================================
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.querySelector(".loading-overlay");
+  const loaderText = document.querySelector(".loading-text");
+
+  let loaded = 0;
+
+  // 이미지 로딩만 체크 (오류 원인 제거)
+  const imgElements = Array.from(document.images);
+  let totalElements = imgElements.length;
+
+  if (totalElements === 0) {
+    finishLoading();
+    return;
+  }
+
+  imgElements.forEach(img => {
+    if (img.complete) increment();
+    else {
+      img.onload = increment;
+      img.onerror = increment;
+    }
+  });
+
+  function increment() {
+    loaded++;
+    let percent = Math.round((loaded / totalElements) * 100);
+    loaderText.textContent = percent + "%";
+
+    if (percent >= 100) finishLoading();
+  }
+
+  function finishLoading() {
+    setTimeout(() => {
+      gsap.to(".loading-overlay", {
+        autoAlpha: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        onComplete: () => {
+          loader.style.display = "none";
         }
+      });
+    }, 300);
+  }
+});
+
+
+
+
+
 
 
 // ===============================
