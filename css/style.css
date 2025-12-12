@@ -19,7 +19,7 @@ body { color: #050505; font-family: 'SpoqaHanSansNeo-Regular'; overflow-x: hidde
 }
 
 
-span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; border-radius: 50%; background: url('../images/sec2img.png'); background-size: cover; border: 1px solid rgba(0,0,0,0.5); pointer-events: none; transition: 0s; z-index: 9999; background-color: #fff; /* 다른 요소 위로 안전하게 */ will-change: transform; mix-blend-mode: difference; /* 성능 최적화 */}
+span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; border-radius: 50%; background-size: cover; border: 1px solid rgba(0,0,0,0.5); pointer-events: none; transition: 0s; z-index: 9999; background-color: #fff; /* 다른 요소 위로 안전하게 */ will-change: transform; mix-blend-mode: difference; /* 성능 최적화 */}
  
  span.circle.on { width: 100px; height: 60px; background: rgba(0,0,0,0.2); border: none; border-radius: 0; background-size: auto; } 
  span.circle.on2 { width: 40px; height: 40px; background: rgba(0,0,0,0.2); border: none; border-radius: 0; } 
