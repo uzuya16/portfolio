@@ -800,7 +800,25 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
       .section9 .textbox ul {width: 90%; margin: 0 auto;}
       .section9 .textbox ul li {flex-direction: column !important;}
       .section10 {height: auto; width: 100vw; }
+      /* SECTION10: 배너 아이템 반응형 */
+      .section10 .bannerbox {overflow: hidden;}
+      .section10 .bannerbox .banner {padding: 0 16px;}
+      .section10 .bannerbox .banner li {
+        width: 70vw;
+        max-width: 420px;
+      }
+      .section10 .bannerbox .banner li img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
 
+      /* SECTION11: 이미지 사이즈 강제 적용 */
+      .section11 .centerbox img {
+        width: 80% !important;
+        margin: 50px 0 !important;
+        display: block;
+      }
 
       .section12 .sign .title {color: #fff; letter-spacing: 0.2em;}
 
@@ -812,6 +830,8 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
     .section1 {
   height: calc(var(--vh) * 100);
 }
+
+.section10 .bannerbox .banner li {width: 30vw;} 
 
 
   }
