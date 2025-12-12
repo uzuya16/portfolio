@@ -1,12 +1,29 @@
 /* =========================================================
    01. 로딩 처리 (빠르게 사라지도록)
 ========================================================= */
-window.addEventListener('load', function() {
+(() => {
   const loader = document.querySelector('.loading-overlay');
-  if (loader) {
-    loader.style.display = 'none';
-  }
-});
+  let hidden = false;
+
+  const hideLoader = () => {
+    if (hidden) return;
+    hidden = true;
+    if (loader) {
+      // 모바일에서도 확실히 사라지도록 스타일과 애니메이션 둘 다 적용
+      gsap.to(loader, {
+        autoAlpha: 0,
+        duration: 0.4,
+        ease: "power2.out",
+        onComplete: () => loader.style.display = 'none'
+      });
+    }
+  };
+
+  window.addEventListener('load', hideLoader);
+  document.addEventListener('DOMContentLoaded', hideLoader);
+  // 로드 이벤트가 지연되거나 누락될 때를 대비한 안전 타이머
+  setTimeout(hideLoader, 3000);
+})();
 
 /* =========================================================
    02. Ctrl 확대 방지
