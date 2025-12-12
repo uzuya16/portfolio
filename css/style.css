@@ -802,7 +802,8 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
       .section10 {height: auto; width: 100vw; }
       /* SECTION10: 배너 아이템 반응형 */
       .section10 .bannerbox {overflow: hidden;}
-      .section10 .bannerbox .banner {padding: 0 16px;}
+      .section10 .img1 {display: none;}
+      .section10 .bannerbox .banner {padding: 10px 16px;}
       .section10 .bannerbox .banner li {
         width: 70vw;
         max-width: 420px;
@@ -817,8 +818,11 @@ span.circle { position: fixed; top: 0; left: 0; width: 30px; height: 30px; borde
       .section11 .centerbox img {
         width: 80% !important;
         margin: 50px 0 !important;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
+      .section11 .centerbox img:last-child {margin-bottom: 0 !important;}
 
       .section12 .sign .title {color: #fff; letter-spacing: 0.2em;}
 
