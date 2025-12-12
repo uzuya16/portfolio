@@ -1,8 +1,12 @@
 // ===============================
 // 로딩 체크
 // ===============================
+        // window.addEventListener('load', function() {
+        //   document.querySelector('.loading-overlay').style.display = 'none';
+        // });
         window.addEventListener('load', function() {
           document.querySelector('.loading-overlay').style.display = 'none';
+          document.querySelector('.main-content').style.opacity = '1';
         });
 
 // ===============================
